@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root {
+    --mainBG: #0d192b;
+    --cardBG: #14253d;
+    --cyan: #00fff7;
+    --hover_img: rgba(0, 255, 247, 0.5);
+    --soft-blue: #8bacda;
+    --white-smoke: #f5f5f5;
+    --dark-blue: #2f415b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--mainBG);
+}
+
+.main-card {
+    width: 350px;
+    height: 600px;
+    border-radius: 15px;
+    background-color: var(--cardBG);
+}
+
+.imagediv {
+    width: 302px;
+    height: 302px;
+    margin: 0px auto;
+    display: block;
+    position: relative;
+    top: 22px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.image {
+    width: 302px;
+    height: 302px;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 302px;
+    height: 302px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0%;
+}
+
+.overlay:hover {
+    opacity: 100%;
+    background-color: var(--hover_img);
+    cursor: pointer;
+}
+
+.info {
+    width: 350px;
+    height: 160px;
+    margin-top: 42px;
+    padding: 0px 22px;
+    font-size: 1.125rem;
+    font-weight: 300;
+    color: var(--white-smoke);
+}
+
+.title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+
+.title a {
+    text-decoration: none;
+    color: var(--white-smoke);
+}
+
+.title a:hover {
+    color: var(--cyan);
+}
+
+.paragraph-info {
+    padding-bottom: 20px;
+    color: var(--soft-blue);
+}
+
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+}
+
+.eth-icon,
+.clock-icon {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+span {
+    vertical-align: middle;
+}
+
+.stats .ETH {
+    color: var(--cyan);
+}
+
+
+.stats .clock {
+    color: var(--soft-blue);
+}
+
+.user {
+    margin: 0 22px;
+    height: 82px;
+    width: 305px;
+    color: var(--soft-blue);
+    font-size: 0.9rem;
+    border-top: 1px solid var(--dark-blue);
+    display: flex;
+    align-items: center;
+}
+
+.user .avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid var(--white-smoke);
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.user a {
+    color: var(--white-smoke);
+    text-decoration: none;
+}
+
+.user a:hover {
+    color: var(--cyan);
+}
+
+.attribution {
+    position: absolute;
+    bottom: 15px;
+    font-size: 11px;
+    text-align: center;
+    color: var(--white-smoke);
+}
+
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
