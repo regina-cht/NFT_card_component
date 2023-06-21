@@ -81,15 +81,12 @@ body {
     font-size: 1.25rem;
     font-weight: 600;
     padding-bottom: 15px;
-}
-
-.title a {
-    text-decoration: none;
     color: var(--white-smoke);
 }
 
-.title a:hover {
+.title:hover {
     color: var(--cyan);
+    cursor: pointer;
 }
 
 .paragraph-info {
@@ -110,7 +107,7 @@ body {
     vertical-align: middle;
 }
 
-span {
+.stats-text {
     vertical-align: middle;
 }
 
@@ -143,24 +140,26 @@ span {
     margin-right: 10px;
 }
 
-.user a {
+.user-profile {
     color: var(--white-smoke);
     text-decoration: none;
 }
 
-.user a:hover {
+.user-profile:hover {
     color: var(--cyan);
 }
 
-.attribution {
-    position: absolute;
-    bottom: 15px;
+footer {
     font-size: 11px;
+    display: block;
+    justify-content: center;
     text-align: center;
+    position: fixed;
+    bottom: 25px;
     color: var(--white-smoke);
 }
 
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: hsl(197, 100%, 83%);
 }
